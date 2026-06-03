@@ -43,7 +43,7 @@ python -m pip install -U pip
 安装 Video2Notes 依赖前，请先安装 PyTorch。请根据你的操作系统、包管理器、CUDA 版本和 GPU 驱动，在 PyTorch 官方安装选择器中选择对应命令：
 
 ```text
-https://pytorch.org/get-started/locally/
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 ```
 
 安装 PyTorch 后，安装 Video2Notes 及其锁定的运行依赖：
