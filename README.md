@@ -1,8 +1,9 @@
 # Video2Notes
 
-[![CI](https://github.com/jackwu/video2notes/actions/workflows/ci.yml/badge.svg)](https://github.com/jackwu/video2notes/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](pyproject.toml)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+English | [简体中文](README.zh-CN.md)
 
 ![Video2Notes cover](assets/cover.png)
 
@@ -31,7 +32,7 @@ The project is designed for a local workflow: run the UI from the repository roo
 Clone the repository and create a conda environment:
 
 ```bash
-git clone https://github.com/jackwu/video2notes.git
+git clone https://github.com/jackwu925/video2notes.git
 cd video2notes
 conda create -n video2notes python=3.10 -y
 conda activate video2notes
@@ -88,13 +89,7 @@ Process multiple links from a relative file:
 video2notes run --url-file data/urls.txt --reuse-existing
 ```
 
-CLI LLM configuration can be provided with a local `.env` file:
-
-```bash
-cp .env.example .env
-```
-
-Then edit `.env` with your OpenAI-compatible provider settings:
+CLI LLM configuration can be provided with a local `.env` file. Create `.env` in the project root with your OpenAI-compatible provider settings:
 
 ```env
 LLM_API_KEY=your_api_key

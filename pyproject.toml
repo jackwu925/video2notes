@@ -41,9 +41,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/jackwu/video2notes"
-Source = "https://github.com/jackwu/video2notes"
-Issues = "https://github.com/jackwu/video2notes/issues"
+Homepage = "https://github.com/jackwu925/video2notes"
+Source = "https://github.com/jackwu925/video2notes"
+Issues = "https://github.com/jackwu925/video2notes/issues"
 
 [project.optional-dependencies]
 dev = [
