@@ -43,10 +43,8 @@ python -m pip install -U pip
 Install PyTorch before installing Video2Notes dependencies. Choose the PyTorch command that matches your operating system, package manager, CUDA version, and GPU driver from the official PyTorch install selector:
 
 ```text
-https://pytorch.org/get-started/locally/
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 ```
-
-Do not copy a CUDA-specific Torch command unless it matches your local NVIDIA driver. CPU-only users can install the CPU build from the same selector.
 
 After PyTorch is installed, install Video2Notes and its pinned runtime dependencies:
 
