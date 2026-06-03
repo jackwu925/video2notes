@@ -46,8 +46,6 @@ python -m pip install -U pip
 https://pytorch.org/get-started/locally/
 ```
 
-不要直接复制和自己 NVIDIA 驱动不匹配的 CUDA 版 Torch 安装命令。只使用 CPU 的用户可以在同一页面选择 CPU 版本。
-
 安装 PyTorch 后，安装 Video2Notes 及其锁定的运行依赖：
 
 ```bash
