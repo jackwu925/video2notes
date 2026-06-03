@@ -1,0 +1,40 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Video2Notes Logo</title>
+  <desc id="desc">A blue rounded square icon combining a video play symbol, film strip holes, and note lines.</desc>
+  <defs>
+    <linearGradient id="bg" x1="96" y1="64" x2="416" y2="448" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1D8BFF"/>
+      <stop offset="0.52" stop-color="#0B63E5"/>
+      <stop offset="1" stop-color="#0647B8"/>
+    </linearGradient>
+    <linearGradient id="inner" x1="154" y1="114" x2="372" y2="390" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EAF3FF"/>
+    </linearGradient>
+    <filter id="shadow" x="50" y="50" width="412" height="412" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#0B63E5" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <!-- App tile -->
+  <rect x="80" y="72" width="352" height="368" rx="78" fill="url(#bg)" filter="url(#shadow)"/>
+
+  <!-- Film strip perforations -->
+  <rect x="122" y="132" width="42" height="30" rx="8" fill="#D9ECFF" opacity="0.95"/>
+  <rect x="122" y="202" width="42" height="30" rx="8" fill="#D9ECFF" opacity="0.95"/>
+  <rect x="122" y="272" width="42" height="30" rx="8" fill="#D9ECFF" opacity="0.95"/>
+  <rect x="122" y="342" width="42" height="30" rx="8" fill="#D9ECFF" opacity="0.95"/>
+
+  <!-- Note/document surface -->
+  <rect x="184" y="116" width="204" height="280" rx="34" fill="url(#inner)"/>
+
+  <!-- Play symbol -->
+  <path d="M264 186C264 176.8 274.1 171.2 281.9 176.1L335.4 209.6C342.7 214.2 342.7 224.8 335.4 229.4L281.9 262.9C274.1 267.8 264 262.2 264 253V186Z" fill="#0B63E5"/>
+
+  <!-- Note lines -->
+  <rect x="224" y="296" width="116" height="18" rx="9" fill="#0B63E5" opacity="0.9"/>
+  <rect x="224" y="334" width="88" height="18" rx="9" fill="#0B63E5" opacity="0.72"/>
+
+  <!-- Subtle inner highlight -->
+  <path d="M187 153C187 134.8 201.8 120 220 120H352" stroke="white" stroke-opacity="0.45" stroke-width="10" stroke-linecap="round"/>
+</svg>

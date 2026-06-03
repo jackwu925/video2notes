@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "video2notes"
+version = "0.1.0"
+description = "Download videos, transcribe them with Whisper, and turn subtitles into timestamped notes with OpenAI-compatible LLMs."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Jack Wu" }
+]
+keywords = [
+  "bilibili",
+  "youtube",
+  "yt-dlp",
+  "whisper",
+  "video2notes",
+  "llm",
+  "transcription",
+  "summarization",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Education",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Multimedia :: Video",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "openai-whisper>=20250625",
+  "requests>=2.32.2",
+  "yt-dlp[default]>=2026.3.17",
+]
+
+[project.urls]
+Homepage = "https://github.com/jackwu/video2notes"
+Source = "https://github.com/jackwu/video2notes"
+Issues = "https://github.com/jackwu/video2notes/issues"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.12",
+]
+publish = [
+  "build>=1.2",
+  "twine>=5.1",
+  "wheel>=0.44",
+]
+ui = [
+  "streamlit>=1.45",
+]
+
+[project.scripts]
+video2notes = "video2notes.cli:main"
+video2notes-ui = "video2notes.ui:launch"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["I001"]

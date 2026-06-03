@@ -1,0 +1,3 @@
+"""video2notes package."""
+
+__version__ = "0.1.0"
